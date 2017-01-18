@@ -1,0 +1,19 @@
+{
+  "name": "buble-plate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "remyli <rapi.remyli@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "dependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "buble": "^0.15.2",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  }
+}
