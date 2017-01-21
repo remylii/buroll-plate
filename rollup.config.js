@@ -1,17 +1,20 @@
+import vue from 'rollup-plugin-vue2';
+import css from 'rollup-plugin-css-only';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+// import buble from 'rollup-plugin-buble';
 import babel from 'rollup-plugin-babel';
-import uglify from 'rollup-plugin-uglify';
 
 export default {
   entry: 'src/main.js',
-  dest: 'dist/bundle.js',
+  dest: 'public/bundle.js',
   sourceMap: true,
   format: 'es',
   plugins: [
-    nodeResolve({ browser: true, jsnext: true, main: true }),  // npmモジュールを`node_modules`から
-    commonjs(),  // CommonJSモジュールをES6に変換
+    vue(),
+    css(),
     babel(),  // ES5に変換
-    uglify()
+    nodeResolve({ browser: true, jsnext: true, main: true }),  // npmモジュールを`node_modules`から
+    commonjs()  // CommonJSモジュールをES6に変換
   ]
 };
