@@ -1,4 +1,9 @@
-import Hello from './hello.js';
+import Vue from 'vue';
 
-const hello = new Hello();
-console.log(hello.say());
+Vue.component('my-component', {
+  template: '<div>My Component!</div>'
+});
+
+new Vue({
+  el: '#app'
+});

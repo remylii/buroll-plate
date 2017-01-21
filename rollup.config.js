@@ -11,10 +11,10 @@ export default {
   sourceMap: true,
   format: 'es',
   plugins: [
-    vue(),
     css(),
-    babel(),  // ES5に変換
     nodeResolve({ browser: true, jsnext: true, main: true }),  // npmモジュールを`node_modules`から
-    commonjs()  // CommonJSモジュールをES6に変換
+    commonjs(),  // CommonJSモジュールをES6に変換
+    vue(),
+    babel()  // ES5に変換
   ]
 };

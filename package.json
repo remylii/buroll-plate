@@ -26,6 +26,7 @@
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-plugin-vue2": "^0.8.0",
     "rollup-watch": "^3.2.2",
-    "uglify-js": "^2.7.5"
+    "uglify-js": "^2.7.5",
+    "vue": "^2.1.10"
   }
 }
