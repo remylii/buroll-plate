@@ -5,6 +5,7 @@
   "author": "remyli <rapi.remyli@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "rollup -c -w",
     "rollup": "rollup -c"
   },
   "dependencies": {
@@ -13,7 +14,13 @@
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-css-only": "^0.2.0",
     "rollup-plugin-json": "^2.1.0",
-    "rollup-plugin-node-resolve": "^2.0.0"
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-postcss": "^0.2.0",
+    "rollup-plugin-scss": "^0.2.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-plugin-vue2": "^0.8.0",
+    "rollup-watch": "^3.2.2"
   }
 }
