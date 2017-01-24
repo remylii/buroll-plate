@@ -1,10 +1,9 @@
 export default class Hello {
   constructor () {
-    this.name = 'Hello';
+    this.title = 'Hello';
   }
 
   say () {
-    return this.name + ', world!';
+    return this.title + ', world!';
   }
 }
-
